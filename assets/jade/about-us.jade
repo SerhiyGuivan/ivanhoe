@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    include ./includes/head.jade
+    body
+        include ./includes/navbar-static-top.jade
+        .container
+            .box.box--head
+                h1.box__title Meet the crew.
+                .box__desc.box__desc--lead All of our members knows the affiliate business from the in and outside. Worked for networks and publishers we know the business as like no other.
+                .form--redirect-sign-up
+                    .row
+                        .col-sm-8
+                            .form-group
+                                input.form-control.input-lg(placeholder="http://Enter your url here")
+                        .col-sm-4
+                            button.btn.btn-lg.btn-pink.btn-block(type="submit") Start a free 30 day trial
+            .posts.posts--about-us
+                .posts__post.post.post--about-us
+                    .post__art--about-us
+                        img(src="../images/bart.png", alt="")
+                    .post__media--about-us
+                        h3.post__title--about-us Bart Houtman, CEO
+                        p Worked for both large travel publisher as for the biggest networks of the network. Bart knows the pain of the publishers. Losing the customers when they leave the website was something a publishers was holding back to invest in their site.
+                .posts__post.post.post--about-us
+                    .post__art--about-us
+                        img(src="../images/vincent.png", alt="")
+                    .post__media--about-us
+                        h3.post__title--about-us Vincent Schokker, Head of Sales
+                        p Working as Head of Sales at one of the largest companies in the Netherlands and exploiting his website in the spare time. VIncent was tired of calculating and checking affiliate statistics day in, day out.
+            .box.box--contacts
+                h3.box__title.box__title--contacts Located in the lowest country of the world
+                .box__desc.box__desc--contacts Ivanhoe is based in the old heart of the Netherlands.
+                .clearfix
+                    .box__map--contacts.hidden-xs
+                        img(src="../images/map.png", alt="")
+                    .box__content--contacts
+                        strong Ivanhoe.io BV
+                        br
+                        | IJsselmeerweg 1
+                        | 1411AA Naarden
+                        | the Netherlands
+                        br
+                        br
+                        | info@ivanhoe.io
+                        | of Commerce: 61717681
+
+
+
+
+        include ./includes/footer.jade
+
+    script(src="../js/main.js")
+
+
+
+

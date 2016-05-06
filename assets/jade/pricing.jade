@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+    include ./includes/head.jade
+    body
+        include ./includes/navbar-static-top.jade
+        .container
+            .box.box--head
+                h1.box__title.box__title--lead Try Ivanhoe free for 30 days.
+                .box__desc.box__desc--lead You’re just seconds away from supercharging your website with our stunning software. See it yourself with our 30 days trial. No credit card needed.
+                .form--redirect-sign-up
+                    .row
+                        .col-sm-8
+                            .form-group
+                                input.form-control.input-lg(placeholder="http://Enter your url here")
+                        .col-sm-4
+                            button.btn.btn-lg.btn-pink.btn-block(type="submit") Start a free 30 day trial
+            .box.box--pricing
+                h3.box__title.box__title--pricing Flexible pricing, performance based.
+                .box__desc.box__desc--pricing All plans are fully charged with all the options you need. The plans are performance based, just like your business.
+                .box__table.box__table--pricing
+                    table.table
+                        tbody
+                            tr
+                                td
+                                    | up to
+                                    span.count  100
+                                    |  sales <br>
+                                    span.price € 29,- <br>
+                                    | per month
+                                td
+                                    | up to
+                                    span.count  500
+                                    |  sales <br>
+                                    span.price € 49,- <br>
+                                    | per month
+                                td
+                                    | up to
+                                    span.count  1500
+                                    |  sales <br>
+                                    span.price € 79,- <br>
+                                    | per month
+                            tr
+                                td
+                                    | up to
+                                    span.count  3500
+                                    |  sales
+                                    =' '
+                                    span.icon--vip.glyphicon.glyphicon-asterisk
+                                    | <br>
+                                    span.price € 139,- <br>
+                                    | per month
+                                td
+                                    | up to
+                                    span.count  5000
+                                    |  sales
+                                    =' '
+                                    span.icon--vip.glyphicon.glyphicon-asterisk
+                                    | <br>
+                                    span.price € 169,- <br>
+                                    | per month
+                                td
+                    .info
+                        span.icon--vip.glyphicon.glyphicon-asterisk
+                        =' premium support by chat and phone'
+            .box.box--faq
+                h3.box__title.box__title--faq Frequently asked questions
+                .box__items--faq
+                        .row
+                            .col-sm-6
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq Can I trial Ivanhoe for free?
+                                    .item__content.item__content--faq You can try our plans 30 days free trial. No credit card is required.
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq How secure is Ivanhoe?
+                                    .item__content.item__content--faq We take security of your information seriously. Your data is stored in a secure third-party database provided by Digital Ocean in encrypted format and sent and received over a secure SSL connection.
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq Can I download Ivanhoe?
+                                    .item__content.item__content--faq No. Ivanhoeis a fully-hosted service. We think this is a better solution as it means we can continue to offer you updates and new features as we go without requiring you to download anything. You can access your account safely anywhere there is an internet connection.
+                            .col-sm-6
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq How does your pricing work?
+                                    .item__content.item__content--faq Our pricing is tiered based on the number of conversions you make at the networks. People set to not appear in the schedule or that are archived are free. Websites, Networks and Intergrations are all unlimited.
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq What types of payment do you accept?
+                                    .item__content.item__content--faq We accept Visa, Mastercard, Paypal and iDeal. Fees are debited from your account automatically each billing period and we email you a receipt.
+                                .box__item--faq.item.item--faq
+                                    .item__title.item__title--faq How long are your contracts?
+                                    .item__content.item__content--faq Our contracts are monthly. You can upgrade, downgrade or cancel your account at any time. You won’t be charged any further once you’ve cancelled your account.
+
+
+        include ./includes/footer.jade
+
+    script(src="../js/main.js")

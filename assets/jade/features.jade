@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    include ./includes/head.jade
+    body
+        include ./includes/navbar-static-top.jade
+        .container
+            .box.box--head
+                h1.box__title.box__title--lead Powerful software, simple interface.
+                .box__desc.box__desc--lead All your affiliate transactions in one interface. Put our snippet in the header and supercharge your links to see  your transactions as ecommerce transactions in Google Analytics
+                .form--redirect-sign-up
+                    .row
+                        .col-sm-8
+                            .form-group
+                                input.form-control.input-lg(placeholder="http://Enter your url here")
+                        .col-sm-4
+                            button.btn.btn-lg.btn-pink.btn-block(type="submit") Start a free 30 day trial
+
+            .box
+                .box__img.box__img--center
+                    img(src='../images/features-board.png', alt='')
+            .box.box--features
+                .box__title.box__title--features
+                .box__items.box__items--features
+                    .item.item--features.odd
+                        .item__img.item__img--features
+                            img(src='../images/rocket.png', alt='')
+                        .item__body.item__body--features
+                            .item__title.item__title--features Supercharge your transactions.
+                            .item__content.item__content--features
+                                | Need to know more about your visitors? Connect
+                                | Ivanhoe with your Networks and Google Analytics
+                                | to see how your audience came in. Turn off non-
+                                | converting keywords and outbid your competition
+                                | on the right words.
+                    .item.item--features.even
+                        .item__img.item__img--features
+                            img(src='../images/lightning.png', alt='')
+                        .item__body.item__body--features
+                            .item__title.item__title--features Powerful software.
+                            .item__content.item__content--features
+                                | Tired of spreadsheets and manual labor? Use our
+                                | fantastic software to get track of your sales. Our
+                                | dashboard makes it really easy to get track of your
+                                | progress. Tried and tested with many affiliate networks..
+                    .item.item--features.odd
+                        .item__img.item__img--features
+                            img(src='../images/security.png', alt='')
+                        .item__body.item__body--features
+                            .item__title.item__title--features All your data is safe.
+                            .item__content.item__content--features
+                                | We fully understand that you want a safe environment
+                                | for your data. Data you provide us is stored in a secure
+                                | third-party database provided by Digital Ocean. in
+                                | encrypted format and sent and received over a secure
+                                | SSL connection
+        include ./includes/footer.jade
+
+    script(src="../js/main.js")

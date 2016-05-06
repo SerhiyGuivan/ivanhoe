@@ -1,0 +1,288 @@
+@import "bootstrap/index"
+@import "./bootstrap-theme.styl"
+
+body
+    background-color #f1f3fa
+    color #444
+    font-family 'Roboto', sans-serif;
+.form
+    &--redirect-sign-up
+        margin 30px 0 15px
+        .form-control
+            font-size 14px
+        .btn
+            font-size 14px
+            padding 13px 16px
+            text-transform uppercase
+.posts
+    &--about-us
+        max-width 720px
+        margin 0 auto 60px
+.post
+    margin-bottom 30px
+    &--about-us
+        margin-bottom 60px
+    &__img--left
+        float left
+        max-width 60%
+        padding 0 15px 15px 0
+    &__title
+        &--about-us
+            font-weight bold
+            text-align center
+            margin 0 0 15px
+            @media (min-width 768px)
+                text-align left
+    &__content
+        clearfix()
+    &__media
+        &--about-us
+            display table-cell
+            width 10000px
+            vertical-align top
+    &__art
+        &--about-us
+            text-align center
+            padding 0 0 30px
+            @media (min-width 768px)
+                display table-cell
+                vertical-align middle
+                padding 0 60px 0 0
+.box
+    margin 0 auto 60px
+    &--adv
+        max-width 940px
+    &--article
+        max-width 720px
+    &--board
+        background: url(../images/board.jpg) no-repeat scroll top transparent;
+        padding-bottom 58%
+        margin-top -60px
+        margin-bottom 0
+        background-size: 100% auto;
+    &--contacts
+        max-width 940px
+    &--faq
+        max-width 940px
+    &--head
+        text-align center
+        max-width 720px
+    &--link
+        text-align center
+        max-width 720px
+        text-transform uppercase
+    &--pricing
+        text-align center
+        max-width 940px
+    &--reviews
+        max-width 720px
+    &--features
+        max-width 940px
+    &__author
+        &--name
+            text-align center
+            font-weight bold
+        &--company
+            text-align center
+    &__content
+        &--contacts
+            font-size 16px
+            font-weight 300
+            text-align center
+            white-space pre-line
+            @media (min-width 768px)
+                text-align left
+        &--review
+            font-size 16px
+            text-align center
+            margin-bottom 30px
+    &__desc
+        font-size 16px
+        margin 0 0 30px
+        text-align center
+        &--lead
+            font-size 18px
+    &__title
+        font-weight bold
+        margin 0 0 15px
+        text-align center
+        &--lead
+            color #000
+            font-size 24px
+            @media (min-width 768px)
+                font-size 36px
+        &--faq
+            margin-bottom 30px
+    &__img
+        text-align center
+        img
+            img-responsive()
+            center-block()
+    &__table
+        &--pricing
+            .icon
+                &--vip
+                    color #044f86
+                    font-size 20px
+            .info
+                font-size 16px
+                font-weight 300
+                text-align center
+            table
+                tr
+                    td
+                        font-size 16px
+                        border-style solid
+                        border-color #ddd
+                        padding 15px 8px
+                        vertical-align middle
+                        text-align center
+                        border-width 0
+                        float left
+                        width 100%
+                        @media (min-width 768px)
+                            border-width 0 1px 1px 0
+                            float none
+                            width 33.33333%
+                        .count
+                            font-size 20px
+                            font-weight bold
+                        .price
+                            color #bd5085
+                            font-size 32px
+                            font-weight bold
+                @media (min-width 768px)
+                    tr
+                        td:last-child
+                            border-right none
+                    tr:last-child
+                        td
+                            border-bottom none
+        &--adv
+            table
+                tr
+                    td
+                        font-size 16px
+                        padding 15px 8px
+                        border-style solid
+                        border-color #ddd
+                        vertical-align middle
+                        text-align center
+                        border-width 0
+                        float left
+                        width 100%
+                        @media (min-width 768px)
+                            border-width 0 1px 1px 0
+                            float none
+                            width 33.33333%
+                        img
+                            img-responsive()
+                            center-block()
+                @media (min-width 768px)
+                    tr
+                        td:last-child
+                            border-right none
+                    tr:last-child
+                        td
+                            border-bottom none
+    &__map
+        &--contacts
+            float left
+            padding 0 30px 15px 0
+
+.item
+    &--faq
+        margin-bottom 30px
+    &--features
+        margin 0 -15px 30px
+    &__content
+        font-size 16px
+    &__title
+        font-weight 500
+        font-size 16px
+        margin-bottom 10px
+        &--features
+            font-size 18px
+            font-weight bold
+            margin-bottom 15px
+    &__img
+        &--features
+            padding 0 15px
+            margin-bottom 30px
+            @media (min-width 768px)
+                margin-bottom 0
+                display inline-block
+                vertical-align middle
+                width 48%
+                .odd &
+                    position relative
+                    left 48%
+            img
+                img-responsive()
+                center-block()
+    &__body
+        &--features
+            padding 0 15px
+            text-align center
+            @media (min-width 768px)
+                text-align left
+                display inline-block
+                vertical-align middle
+                width 48%
+                .odd &
+                    position relative
+                    right 48%
+.footer
+    background-color #fff;
+    padding 30px 0;
+    &__logo
+        text-align center
+        margin-bottom 30px
+    &__nav
+        font-weight bold
+        text-align center
+        margin-bottom 30px
+        li
+            @media(min-width 768px)
+                display inline-block
+                vertical-align top
+                float none
+            a
+                color #444
+                text-transform uppercase
+            a:hover,
+            a:focus
+                color #000
+    &__social
+        text-align center
+        margin-bottom 15px
+        li
+            display inline-block
+            vertical-align top
+            float none
+            a
+                background: url(../images/social.png) no-repeat scroll 0 0 transparent
+                display block
+                width 37px
+                height 37px
+                text-hide()
+            .tw
+                background-position: -47px 0
+            .in
+                background-position: -93px 0
+            .g
+                background-position: -138px 0
+    &__copyright
+        color #044f86
+        font-size 12px
+        font-weight bold
+        text-align center
+        text-transform uppercase
+
+
+
+
+
+
+
+
