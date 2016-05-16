@@ -1,0 +1,149 @@
+doctype html
+html(lang="en")
+    include ./includes/head.jade
+    body
+        include ./includes/navbar-static-top.jade
+        .container
+            .box.box--head
+                h1.box__title.box__title--lead Our partners in crime.
+                .box__desc.box__desc--lead We work with a wide array of networks. The list will grow on a weekly basis. Can’t find your network in the list? Let us know and we will connect it within your free month!
+                .form--redirect-sign-up
+                    .row
+                        .col-sm-8
+                            .form-group
+                                input.form-control.input-lg(placeholder="http://Enter your url here")
+                        .col-sm-4
+                            button.btn.btn-lg.btn-pink.btn-block(type="submit") Start a free 30 day trial
+            .box.box--networks
+                h3.box__title Network statuses.
+                .box__items.box__items--networks
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--1")
+                                    span.glyphicon.glyphicon-plus
+                                    | Affili.net
+                            .item__status.item__status--operational Operational
+                        .collapse.item__collapse.item__collapse--1
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--2")
+                                    span.glyphicon.glyphicon-plus
+                                    | Daisycon
+                            .item__status.item__status--disrupted Disrupted
+                        .collapse.item__collapse.item__collapse--2
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--3")
+                                    span.glyphicon.glyphicon-plus
+                                    | Paypro
+                            .item__status.item__status--operational Operational
+                        .collapse.item__collapse.item__collapse--3
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--4")
+                                    span.glyphicon.glyphicon-plus
+                                    | Tradedoubler
+                            .item__status.item__status--disrupted Disrupted
+                        .collapse.item__collapse.item__collapse--4
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--5")
+                                    span.glyphicon.glyphicon-plus
+                                    | Tradetracker
+                            .item__status.item__status--operational Operational
+                        .collapse.item__collapse.item__collapse--5
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+                    .item.item--networks.panel
+                        .item__header
+                            .item__title
+                                a(data-toggle="collapse", data-parent=".box__items--networks", href=".item__collapse--6")
+                                    span.glyphicon.glyphicon-plus
+                                    | Zanox
+                            .item__status.item__status--disrupted Disrupted
+                        .collapse.item__collapse.item__collapse--6
+                            .item__content
+                                table.table.table-borderless
+                                    tr
+                                        td Website
+                                        td
+                                            em.color--error Down, last updated 5 minutes ago
+                                    tr
+                                        td API
+                                        td
+                                            em.color--error Disrupted, no connections for multiple accounts
+            .box.box--incidents
+                h3.box__title Pasts incidents.
+                .box__items
+                    .item.item--incidents
+                        .item__date Apr 4, 2106
+                        .item__content No incidents reported this day
+                    .item.item--incidents
+                        .item__date Apr 4, 2106
+                        .item__content No incidents reported this day
+                    .item.item--incidents
+                        .item__date Apr 4, 2106
+                        .item__content
+                            .item.item--incident
+                                .color--warning <strong>Tradedoubler</strong> / 15:00 - 15:50 / website down
+                                em No comment from Tradedoubler
+                            .item.item--incident
+                                .color--error <strong>Tradetracker</strong> / 13:30 - 13:50 / API down
+                                em Problem was solved, tracking was not affected
+        include ./includes/footer.jade
+
+    script(src="../js/main.js")
+
