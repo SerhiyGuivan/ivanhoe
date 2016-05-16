@@ -19,9 +19,9 @@ body
         max-width 720px
         margin 0 auto 60px
 .post
-    margin-bottom 30px
-    &--about-us
-        margin-bottom 60px
+    margin 0 auto 60px
+    &--single
+        max-width 940px
     &__img--left
         float left
         max-width 60%
@@ -78,6 +78,10 @@ body
         max-width 720px
     &--features
         max-width 940px
+    &--networks
+        max-width 940px
+    &--incidents
+        max-width 940px
     &__author
         &--name
             text-align center
@@ -94,6 +98,7 @@ body
                 text-align left
         &--review
             font-size 16px
+            font-style italic
             text-align center
             margin-bottom 30px
     &__desc
@@ -103,15 +108,20 @@ body
         &--lead
             font-size 18px
     &__title
+        font-size 24px
         font-weight bold
         margin 0 0 15px
+        color #000
         text-align center
+        &--features
+            margin-bottom 30px
         &--lead
             color #000
-            font-size 24px
             @media (min-width 768px)
                 font-size 36px
         &--faq
+        ~/--networks &
+        ~/--incidents &
             margin-bottom 30px
     &__img
         text-align center
@@ -191,12 +201,51 @@ body
             padding 0 30px 15px 0
 
 .item
-    &--faq
-        margin-bottom 30px
+    &--incident
     &--features
-        margin 0 -15px 30px
+        margin-bottom 15px
+    &--faq
+    &--incidents
+    &--blog
+        margin-bottom 30px
+    &--networks
+        margin 0 0 -1px
+        box-shadow none
+        border-radius 0
+        border 1px solid #e0e0e0
+        &:first-child
+            border-radius 4px 4px 0 0
+        &:last-child
+            border-radius 0 0 4px 4px
+    &__header
+        ~/--networks &
+            clearfix()
     &__content
-        font-size 16px
+        ~/--features &
+            font-size 16px
+            margin-bottom 15px
+        ~/--networks &
+            color #919191
+            padding 5px 40px
+        ~/--blog &
+            margin-bottom 15px
+    &__more
+        ~/--blog &
+            text-align right
+            margin-bottom 15px
+            a
+                color #bd5085
+                font-style italic
+    &__desc
+        ~/--blog &
+            color #044f86
+            font-style italic
+            margin-bottom 15px
+    &__date
+        ~/--incidents &
+            font-size 18px
+            font-weight bold
+            margin-bottom 15px
     &__title
         font-weight 500
         font-size 16px
@@ -205,39 +254,64 @@ body
             font-size 18px
             font-weight bold
             margin-bottom 15px
-    &__img
-        &--features
-            padding 0 15px
-            margin-bottom 30px
-            @media (min-width 768px)
-                margin-bottom 0
-                display inline-block
-                vertical-align middle
-                width 48%
-                .odd &
-                    position relative
-                    left 48%
-            img
-                img-responsive()
-                center-block()
-    &__body
-        &--features
-            padding 0 15px
             text-align center
-            @media (min-width 768px)
+            @media(min-width 768px)
                 text-align left
+        ~/--blog &
+            font-weight bold
+            margin-bottom 0
+            font-size 18px
+        ~/--networks &
+            display table-cell
+            padding 15px 20px
+            vertical-align middle
+            width 10000px
+            a
+                color #444
+                text-decoration none
+            .glyphicon
+                top -1px
+                margin-right 10px
+                font-size 10px
+                color #aaa
+    &__status
+        ~/--networks &
+            display table-cell
+            padding 15px 20px
+            vertical-align middle
+            &--operational
+                color #1bc727
+                font-style italic
+            &--disrupted
+                color #c71b1b
+                font-style italic
+    &__img
+        margin-bottom 15px
+        &--features
+            text-align center
+            img
                 display inline-block
-                vertical-align middle
-                width 48%
-                .odd &
-                    position relative
-                    right 48%
+                max-width 170px
+                height auto
+.row
+    &--sm-flex
+        @media(min-width 768px)
+            display flex
+            flex wrap
+    &--sm-flex-center
+        @media(min-width 768px)
+            display flex
+            flex wrap
+            align-items center
 .footer
     background-color #fff;
     padding 30px 0;
     &__logo
         text-align center
         margin-bottom 30px
+        a
+            display inline-block
+            vertical-align top
     &__nav
         font-weight bold
         text-align center
@@ -278,7 +352,13 @@ body
         font-weight bold
         text-align center
         text-transform uppercase
-
+.color
+    &--error
+        color #d11e1e
+    &--succes
+        color #1bc727
+    &--warning
+        color #fcac00
 
 
 
