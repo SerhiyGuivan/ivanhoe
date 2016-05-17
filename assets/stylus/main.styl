@@ -14,6 +14,22 @@ body
             font-size 14px
             padding 13px 16px
             text-transform uppercase
+    &--sign-up
+        margin-bottom 60px
+        label
+            font-size 18px
+            font-weight normal
+        .form-group:last-child
+            margin-top 40px
+        .form-control
+            font-size 14px
+        .btn
+            font-size 14px
+            padding 13px 16px
+            text-transform uppercase
+            @media (max-width 767px)
+                display block
+                width 100%
 .posts
     &--about-us
         max-width 720px
@@ -51,6 +67,10 @@ body
 .box
     margin 0 auto 60px
     &--adv
+        max-width 940px
+    &--group
+        box-shadow 0 -1px 0 0 #b3b4b5 inset
+        border-bottom 1px solid #a4a4a4
         max-width 940px
     &--article
         max-width 720px
@@ -206,8 +226,12 @@ body
         margin-bottom 15px
     &--faq
     &--incidents
+        margin-bottom 30px
     &--blog
         margin-bottom 30px
+        &-offset
+            @media (min-width 768px)
+                padding-top 50%
     &--networks
         margin 0 0 -1px
         box-shadow none
@@ -263,7 +287,7 @@ body
             font-size 18px
         ~/--networks &
             display table-cell
-            padding 15px 20px
+            padding 20px 30px
             vertical-align middle
             width 10000px
             a
@@ -291,6 +315,7 @@ body
             text-align center
             img
                 display inline-block
+                width 100%
                 max-width 170px
                 height auto
 .row
@@ -303,6 +328,9 @@ body
             display flex
             flex wrap
             align-items center
+    &--sm-column-2
+        @media(min-width 768px)
+            column-count 2
 .footer
     background-color #fff;
     padding 30px 0;
